@@ -1,35 +1,26 @@
 from datetime import date
-
 tasks = []
-
 
 # Feature 1: Add tasks with deadlines
 # Feature 2: Assign priorities
 def add_task():
     name = input("Enter task name: ").strip()
-
     if not name:
         print("Task name cannot be empty.")
         return
-
     while True:
         deadline_text = input("Enter deadline (YYYY-MM-DD): ")
-
         try:
             deadline = date.fromisoformat(deadline_text)
             break
         except ValueError:
             print("Invalid date. Example: 2026-11-05")
-
     while True:
         priority = input("Enter priority (High/Medium/Low): ")
         priority = priority.strip().capitalize()
-
         if priority in ["High", "Medium", "Low"]:
             break
-
         print("Please enter High, Medium, or Low.")
-
     task = {
         "name": name,
         "deadline": deadline,
