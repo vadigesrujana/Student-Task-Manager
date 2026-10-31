@@ -1,3 +1,4 @@
+# Student Task Manager
 ## About the Project
 Student Task Manager is a simple Python application that helps students organize and manage their daily tasks.
 ## Features
