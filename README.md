@@ -7,6 +7,9 @@ Student Task Manager is a simple Python application that helps students organize
 - Mark tasks as completed
 - Delete tasks
 - Handle invalid inputs
+- Task deadlines
+- Priority levels
+- Overdue alerts
 ## Technology Used
 - Python
 ## How to Run
